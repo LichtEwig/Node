@@ -1,4 +1,4 @@
-Entry point 
+//Entry point 
 
 //  const calculos = require('./calculadora.js');
 
