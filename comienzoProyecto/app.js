@@ -1,4 +1,5 @@
 const express = require('express');
+const { patch } = require('../clase-n28-29/src/Routes/itemRoutes');
 const app = express();
 
 const port = 3001;
@@ -15,3 +16,12 @@ app.get('/home', (req, res) => {
 
 
 app.listen(port, () => { console.log('Servidor funcionando port:  http://localhost:3001 ' + port); });
+
+app.use((express.static)('public'));
+
+app.set('view engeine','ejs');
+app.set('views', path.join (__dirname + './src/views'));
+
+app.get("/",  (req,res) => {
+   res.render(path.join (__dirname + '../views/home'))
+});
