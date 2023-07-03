@@ -2,6 +2,7 @@ const express = require('express');
 const { patch } = require('../clase-n28-29/src/Routes/itemRoutes');
 const app = express();
 
+
 const port = 3001;
 
 
@@ -25,3 +26,5 @@ app.set('views', path.join (__dirname + './src/views'));
 app.get("/",  (req,res) => {
    res.render(path.join (__dirname + '../views/home'))
 });
+
+
